@@ -39,7 +39,7 @@ const QuestionDetails = () => {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.currentUserReducer);
   const location = useLocation();
-  const url = "http://localhost:3000";
+  const url = "https://stack-over-flow.onrender.com";
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();
