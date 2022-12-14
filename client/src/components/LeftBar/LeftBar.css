@@ -44,3 +44,50 @@
     background-color: rgb(225, 225, 225);
     border-right: solid 3px #ef8236;
 }
+
+
+@media screen and (max-width: 1024px) {
+    
+    .side-nav {
+      width: var(--container-width-md);
+      margin: 35px 0px;
+      padding: 25px 0px;
+
+    }
+  
+    
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .left-sidebar{
+        width:104px;
+    }
+    .side-nav {
+      width: 110px;
+      margin: 44px 0px;
+      padding: 13px 0px;
+  
+    }
+    .side-nav-div{
+        padding-left: 2px 0;
+    }
+    .side-nav-div div{
+        padding-left: 3px;
+    }
+    .side-nav-links{
+        padding-left: 3px;
+    }
+    .side-nav-links:nth-child(2){
+        padding-left: 0px;
+    }
+    .side-nav-links:nth-child(3){
+        padding-left: 54px;
+    }
+    .side-nav-links:nth-child(4){
+        padding-left: 54px;
+    }
+  
+    
+  }

@@ -1,7 +1,7 @@
 .main-bar{
     width: calc( 100% - 300px - 24px );
     float: left;
-    margin: -10px 0px;
+    margin: 10px 0px;
     padding: 0;
 }
 
@@ -87,4 +87,32 @@
 }
 .display-tags-time .display-time {
     font-size: 13px;
+}
+
+@media only screen and (max-width:980px) {
+    .main-bar{
+        width: -webkit-fill-available;
+        float: inherit;
+        margin-right: 1px;
+    }
+    .main-bar-header{
+        margin-top: 30px;
+    
+    } */
+    .ask-btn{
+        padding: 0px;
+    }
+    .main-bar-header{
+        font-size: x-small;
+    }
+}
+@media only screen and(max-width:400px) {
+    .main-bar{
+        width: -webkit-fill-available;
+        float: inherit;
+        margin-right: 1px;
+        margin-top: 40px;
+    
+    }
+    
 }

@@ -67,3 +67,23 @@
     border-radius: 2px;
     font-size: 13px;
 }
+
+@media screen and (max-width: 980px){
+    .right-sidebar{
+        float: none;
+        clear: both;
+        margin: 50px auto;
+        width: 100%;
+    }
+    .right-sidebar-div-2{
+        justify-content: unset;
+    }
+    .right-sidebar-div-1{
+        justify-content: unset;
+    }
+    .right-sidebar-div-1 .right-sidebar-div-2
+    {
+        justify-content: unset;
+
+    }
+}
