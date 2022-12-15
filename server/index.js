@@ -7,7 +7,7 @@ import userRoutes from './routes/users.js'
 import questionRoutes from './routes/Questions.js'
 import answerRoutes from './routes/Answers.js'
 import commentRoutes from "./routes/comments.js";
-
+import postRoutes from "./routes/posts.js";
 
 const app = express();
 dotenv.config()
@@ -26,7 +26,7 @@ app.use("/user",userRoutes)
 app.use("/questions",questionRoutes)
 app.use("/answer",answerRoutes)
 app.use("/comments", commentRoutes);
-
+app.use("/posts", postRoutes);
 
 const PORT = process.env.PORT || 5000;
 

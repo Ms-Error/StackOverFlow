@@ -7,6 +7,14 @@ const userSchema = mongoose.Schema({
   dob: { type: Date, required: true },
   about: { type: String },
   tags: { type: [String] },
+  followers: {
+    type: Array,
+    default: [],
+  },
+  followings: {
+    type: Array,
+    default: [],
+  },
   join: { type: Date, default: Date.now },
 });
 export default mongoose.model("User",userSchema)
