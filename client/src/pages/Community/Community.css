@@ -1,0 +1,186 @@
+.community-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.community-page .community-body {
+    
+    padding: 0%;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-page .community-navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.community-page .links p{
+ color:black;
+    font-weight: 500;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.community-page .community-navbar .links{
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.community-page .links p:hover{
+    background-color: rgb(220, 220, 220);
+}
+
+.community-page .community-navbar .active {
+    border-bottom: 3px solid #ef8236;
+}
+
+.post-body {
+    width: 100%;
+    margin-top: 15px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.post {
+    width: 450px;
+    margin: 15px 0px;
+    border-radius: 15px;
+    background-color: rgb(255, 241, 230);
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.image-post > img,
+.image-post > video {
+    width: 100%;
+}
+
+.top-post {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+}
+
+.avatar {
+    margin-right: 15px;
+}
+
+.top-post-info > h3 {
+    font-size: medium;
+}
+
+.top-post-info > p {
+    font-size: small;
+    
+}
+
+.bottom-post {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 20px;
+}
+
+.options-post {
+    padding-top: 10px;
+    border-top: 1px solid rgb(211, 211, 211);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: rgb(71, 69, 69);
+    padding: 15px;
+}
+
+.option-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.option-post > p {
+    margin: 10px;
+}
+
+.option-post > p {
+    margin: 10px;
+}
+
+
+.option-post:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.post-message {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: #ef8236;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}
+
+.post-message .message-sender {
+    display: flex;
+    padding: 15px;
+}
+
+.message-sender form {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message-sender form input {
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px;
+    margin: 0px 10px;
+    border-radius: 999px;
+    background-color: white;
+}
+
+.message-sender form .message-input {
+    flex: 1;
+}
+
+.message-sender form button {
+    padding: 5px 24px;
+    background-color: rgb(253, 226, 204);
+    border: 1px solid rgb(255, 241, 230);
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.message-sender form button:hover {
+    background-color: rgb(248, 241, 235);;
+}
+
+@media only screen and (max-width: 826px) {
+    .post{
+        width: 320px;
+    }
+
+    .message-sender form .message-input {
+        margin-bottom: 5px;
+    }
+
+}

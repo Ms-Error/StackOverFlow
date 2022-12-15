@@ -5,6 +5,16 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+.fol{
+  display:flex;
+
+
+  flex-wrap: row;
+}
+.ing{
+    margin-right: 10%;
+}
+
 
 .user-details{
     display: flex;
@@ -85,4 +95,12 @@
     border: none;
     margin-left: 10px;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 826px) {
+    .edit-profile-btn{
+        padding: 0;
+    }
+
 }

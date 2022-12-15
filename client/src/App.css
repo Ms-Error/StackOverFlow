@@ -15,26 +15,8 @@
     margin-top: 41px;
 }
 
-@media screen and (max-width:600px) {
-    .home-container-2{
-    width: -webkit-fill-available;
-    padding: 10px;
-    box-sizing: border-box;
-     margin-top: 41px;
-    }
-    .home-container-1{
-        justify-content: center;
-    }
-
-}
-@media only screen and (max-width:970px) {
+@media (max-width: 900px) {
     .home-container-2 {
-        width: calc(100% - 95px);
-        float: left;
-        position: inherit;
-        width: 100%;
-        display: grid;
-        margin-top: 41px;
+      width: 100%;
     }
-    
-}
+  }

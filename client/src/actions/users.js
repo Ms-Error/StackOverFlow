@@ -1,5 +1,5 @@
 import * as api from "../api";
-
+import { setCurrentUser } from "./currentUser";
 export const fetchAllUsers = () => async (dispatch) => {
   try {
     const { data } = await api.fetchAllUsers();
@@ -17,3 +17,13 @@ export const updateProfile = (id, updateData) => async (dispatch) => {
     console.log(error);
   }
 };
+
+export const Follow = (userId) => ({
+  type: "follow",
+  payload: userId,
+});
+
+export const Unfollow = (userId) => ({
+  type: "unfollow",
+  payload: userId,
+});

@@ -1,7 +1,7 @@
 import React from "react";
 import LeftSideBar from "../../components/LeftBar/LeftBar";
 import { TagsList } from "./TagsList";
-
+import MobileSideBar from "../../components/MobileSideBar/MobileSideBar";
 function Tags() {
   const tagsList = [
     {
@@ -68,6 +68,7 @@ function Tags() {
   return (
     <div className="home-container-1">
       <LeftSideBar />
+      <MobileSideBar />
       <div className="home-container-2">
         <h1 className="tags-h1">Tags</h1>
         <p className="tags-p">

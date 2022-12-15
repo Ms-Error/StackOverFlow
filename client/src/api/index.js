@@ -62,3 +62,19 @@ export const updateProfile = (id, updateData) =>
       anscommentId,
       noOfAnswerComments,
     });
+
+    export const follow = (user_id, Luserid) => {
+      API.put(`/user/${user_id}/follow`, { id: Luserid });
+    };
+
+    export const unfollow = (user_id, Luserid) => {
+      API.put(`/user/${user_id}/unfollow`, { id: Luserid });
+    };
+
+  
+export const postimage = (postData) => API.post("/posts/image", postData);
+export const postvideo = (postData) => API.post("/posts/video", postData);
+export const getallposts = () => API.get("/posts/get");
+export const likepost = (postId, userId) =>
+  API.patch(`/posts/like/${postId}`, { userId });
+export const deletepost = (id) => API.delete(`/posts/delete/${id}`);

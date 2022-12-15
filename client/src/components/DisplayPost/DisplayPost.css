@@ -1,0 +1,6 @@
+.post-container {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

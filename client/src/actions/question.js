@@ -83,15 +83,6 @@ export const deleteComment =
       console.log(error);
     }
   };
-// export const updateComment = (id, commentId, updateData1) => async (dispatch) => {
-//     try{
-//         await api.updateComment(id, commentId, updateData1)
-//         dispatch({ type: "UPDATE_QUESTION_COMMENT" , payload: data})
-//         dispatch(fetchAllQuestions())
-//     }catch(error){
-//         console.log
-//     }
-// }
 
 export const postAnswerComment = (acommentData) => async (dispatch) => {
   try {

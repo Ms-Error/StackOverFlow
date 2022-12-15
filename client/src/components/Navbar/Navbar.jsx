@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import { useSelector,useDispatch } from "react-redux";
 import './Navbar.css'
-import search from '../../assets/search.png'
 import Avatar from '../../components/Avatar/Avatar'
 import { setCurrentUser } from '../../actions/currentUser';
 import { useNavigate } from "react-router-dom";
@@ -38,18 +37,18 @@ const handleLogout = () => {
         <Link to="/" className="nav-item nav-logo ">
           <img src={logo} alt="logo" />
         </Link>
-        <Link to="/" className="nav-item nav-btn v-class-resp">
+        <Link to="/" className="nav-item nav-btn togo">
           About
         </Link>
-        <Link to="/" className="nav-item nav-btn v-class-resp">
+        <Link to="/" className="nav-item nav-btn togo">
           Products
         </Link>
-        <Link to="/" className="nav-item nav-btn v-class-resp">
+        <Link to="/" className="nav-item nav-btn togo">
           For teams
         </Link>
         <form className="searchbar">
           <input type="text" placeholder="Search..."></input>
-          <img src={search} alt="search" width={18} className="search-icon" />
+         
         </form>
 
         {User === null ? (

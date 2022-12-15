@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchAllQuestions } from './actions/question';
 import { fetchAllUsers } from "./actions/users";
+
+import { getAllPosts } from "./actions/post";
 import Chatbot from "./components/chatbot/chatbot"
 
 
@@ -14,6 +16,8 @@ function App() {
   useEffect(() => {
   dispatch(fetchAllQuestions())
     dispatch(fetchAllUsers());
+    dispatch(getAllPosts());
+    
   }, [dispatch])
   
   return (
