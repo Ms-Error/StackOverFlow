@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 
 import LeftSidebar from '../../components/LeftBar/LeftBar'
-import ChatBot from '../../components/chatbot/chatbot'
+
 
 import { postVideo } from '../../actions/post'
 import PostsVideo from './PostsVideo/Posts'
@@ -62,7 +62,7 @@ const CommunityVideos = () => {
           </div>
       </div>
     </div>
-        <ChatBot />
+       
       </div>
     </div>
   )

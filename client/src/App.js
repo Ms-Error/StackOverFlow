@@ -6,9 +6,9 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchAllQuestions } from './actions/question';
 import { fetchAllUsers } from "./actions/users";
-
+import ChatBot from './components/ChatBot/ChatBot';
 import { getAllPosts } from "./actions/post";
-import Chatbot from "./components/chatbot/chatbot"
+
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <Router>
         <Navbar />
         <AllRoutes />
-       <Chatbot/>
+  <ChatBot/>
       </Router>
     </div>
   );

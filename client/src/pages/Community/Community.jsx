@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 import MobileSideBar from "../../components/MobileSideBar/MobileSideBar";
 import LeftSidebar from '../../components/LeftBar/LeftBar'
-import ChatBot from '../../components/chatbot/chatbot'
+
 import AllPosts from './AllPosts/Posts'
 import '../../App.css'
 import './Community.css'
@@ -48,7 +48,7 @@ const Community = () => {
             </div>
           </div>
         </div>
-        <ChatBot />
+    
       </div>
     </div>
   );

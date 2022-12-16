@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
 
 import LeftSidebar from '../../components/LeftBar/LeftBar'
-import ChatBot from '../../components/chatbot/chatbot'
+
 
 import {postImage} from '../../actions/post'
 import '../../App.css'
@@ -63,7 +63,7 @@ const CommunityImages = () => {
           </div>
       </div>
     </div>
-        <ChatBot />
+      
       </div>
     </div>
   )

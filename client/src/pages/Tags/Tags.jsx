@@ -2,6 +2,7 @@ import React from "react";
 import LeftSideBar from "../../components/LeftBar/LeftBar";
 import { TagsList } from "./TagsList";
 import MobileSideBar from "../../components/MobileSideBar/MobileSideBar";
+
 function Tags() {
   const tagsList = [
     {
@@ -85,6 +86,7 @@ function Tags() {
           ))}
         </div>
       </div>
+  
     </div>
   );
 }

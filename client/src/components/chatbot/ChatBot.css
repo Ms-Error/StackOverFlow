@@ -1,0 +1,14 @@
+.chatbot img {
+    width: 120px;
+    position: fixed;
+    background-color: transparent;
+    bottom: 30px;
+    right: 10px;
+}
+
+.chatbox {
+    max-width: 300px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}

@@ -3,6 +3,7 @@ import HomeMainbar from "../../components/HomeMainbar/HomeMainbar";
 import LeftBar from "../../components/LeftBar/LeftBar";
 import RightSidebar from "../../components/RightSidebar/RightSidebar";
 import MobileSideBar from "../../components/MobileSideBar/MobileSideBar";
+import ChatBot from "../../components/ChatBot/ChatBot";
 import "../../App.css";
 
 const Question = () => {
@@ -13,6 +14,7 @@ const Question = () => {
       <div className="home-container-2">
         <HomeMainbar />
         <RightSidebar />
+  <ChatBot/>
       </div>
     </div>
   );
