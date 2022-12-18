@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL: "https://stack-over-flow-fcwk-f5cfjcyj3-ms-error.vercel.app",
+  baseURL: "https://stack-over-flow-fcwk.vercel.app",
 });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("Profile")) {
